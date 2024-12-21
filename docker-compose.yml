@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  wordpress:
+    image: docker.io/kocoten1992/wordpress-sqlite:6.7.1
+    restart: always
+    ports:
+      - 80
+    volumes:
+      - ./wordpress:/var/www/html
