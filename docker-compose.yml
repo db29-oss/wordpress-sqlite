@@ -6,7 +6,7 @@ services:
     image: docker.io/kocoten1992/wordpress-sqlite:latest
     restart: always
     ports:
-      - 8080:80
+      - '8080:80'
     volumes:
       - wordpress:/var/www/html
 
